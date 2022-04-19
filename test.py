@@ -24,7 +24,7 @@ for x in range(img_np.shape[0]):
         elif np.sum(img_np[x,y,:]) > (765/5*1):
             print('⓪',end = '')
         else:
-            print('❺',end = '')
+            print('-',end = '')
     
     print('')
 
