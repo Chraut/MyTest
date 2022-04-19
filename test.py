@@ -15,14 +15,16 @@ print(img_np.shape)
 # iterate over pixel 
 for x in range(img_np.shape[0]):
     for y in range(img_np.shape[1]):
-        if np.sum(img_np[x,y,:]) > (765/4*3):
+        if np.sum(img_np[x,y,:]) > (765/5*4):
             print(' ',end = '')
-        elif np.sum(img_np[x,y,:]) > (765/4*2):
+        elif np.sum(img_np[x,y,:]) > (765/5*3):
             print('•',end = '')
-        elif np.sum(img_np[x,y,:]) > (765/4*1):
+        elif np.sum(img_np[x,y,:]) > (765/5*2):
             print('●',end = '')
-        else:
+        elif np.sum(img_np[x,y,:]) > (765/5*1):
             print('⓪',end = '')
+        else:
+            print('❺',end = '')
     
     print('')
 
