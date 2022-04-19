@@ -12,16 +12,7 @@ img_np = np.array(img)
 # size of array 
 print(img_np.shape)
 
-#img_np = np.array([[1, 2, 3], [4, 5, 6]])
-
 # iterate over pixel 
-'''
-for x in img_np:
-    for y in x:
-        y[0] = 255
-        y[1] = 255
-'''
-
 for x in range(img_np.shape[0]):
     for y in range(img_np.shape[1]):
         if np.sum(img_np[x,y,:]) > (765/4*3):
@@ -35,16 +26,9 @@ for x in range(img_np.shape[0]):
     
     print('')
 
-
 # convert numpy array to pic
 plt.imshow(img_np, interpolation='nearest')
 plt.show()
-
-"""
-# show image
-plt.imshow(img)
-plt.show()
-"""
 
 print('done',end = '')
 print('Das ist meine Änderung')
